@@ -30,7 +30,6 @@ ALLOWED_HOSTS = ['matthew-popp.com']
 # Application definition
 
 INSTALLED_APPS = [
-	'app.apps.AppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,7 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	'django.contrib.gis',
 	'static_precompiler',
+	'widget_tweaks',
+	'core',
+	'map',
+	'accounts',
 ]
+
+AUTH_USER_MODEL = 'core.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -904,3 +904,96 @@
 2017.09.21 23:19:07 LOG5[1254]: s_connect: connected 127.0.0.1:8888
 2017.09.21 23:19:07 LOG5[1254]: Service [https] connected remote server from 127.0.0.1:43108
 2017.09.21 23:19:07 LOG5[1254]: Connection closed: 4028 byte(s) sent to SSL, 600 byte(s) sent to socket
+2017.09.22 02:53:27 LOG5[1255]: Service [https] accepted connection from 94.102.49.190:51432
+2017.09.22 02:53:28 LOG3[1255]: s_connect: connect ::1:8888: Connection refused (111)
+2017.09.22 02:53:28 LOG5[1255]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:53:28 LOG5[1255]: Service [https] connected remote server from 127.0.0.1:35840
+2017.09.22 02:53:30 LOG3[1255]: transfer: s_poll_wait: TIMEOUTclose exceeded: closing
+2017.09.22 02:53:30 LOG5[1255]: Connection closed: 60858 byte(s) sent to SSL, 262 byte(s) sent to socket
+2017.09.22 02:53:31 LOG5[1256]: Service [https] accepted connection from 94.102.49.190:52145
+2017.09.22 02:53:31 LOG5[1256]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:53:31 LOG5[1256]: Service [https] connected remote server from 127.0.0.1:35862
+2017.09.22 02:53:32 LOG5[1256]: Connection closed: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 02:53:32 LOG5[1257]: Service [https] accepted connection from 94.102.49.190:52283
+2017.09.22 02:53:32 LOG3[1257]: s_connect: connect ::1:8888: Connection refused (111)
+2017.09.22 02:53:32 LOG5[1257]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:53:32 LOG5[1257]: Service [https] connected remote server from 127.0.0.1:35866
+2017.09.22 02:53:32 LOG5[1257]: Connection closed: 0 byte(s) sent to SSL, 1 byte(s) sent to socket
+2017.09.22 02:53:33 LOG5[1258]: Service [https] accepted connection from 94.102.49.190:52486
+2017.09.22 02:53:33 LOG3[1258]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2017.09.22 02:53:33 LOG5[1258]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 02:53:34 LOG5[1259]: Service [https] accepted connection from 94.102.49.190:52594
+2017.09.22 02:53:34 LOG3[1259]: SSL_accept: 1408A10B: error:1408A10B:SSL routines:ssl3_get_client_hello:wrong version number
+2017.09.22 02:53:34 LOG5[1259]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 02:53:37 LOG5[1260]: Service [https] accepted connection from 94.102.49.190:52850
+2017.09.22 02:53:37 LOG5[1260]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:53:37 LOG5[1260]: Service [https] connected remote server from 127.0.0.1:35870
+2017.09.22 02:53:37 LOG5[1260]: Connection closed: 0 byte(s) sent to SSL, 1 byte(s) sent to socket
+2017.09.22 02:53:38 LOG5[1261]: Service [https] accepted connection from 94.102.49.190:52993
+2017.09.22 02:53:38 LOG3[1261]: s_connect: connect ::1:8888: Connection refused (111)
+2017.09.22 02:53:38 LOG5[1261]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:53:38 LOG5[1261]: Service [https] connected remote server from 127.0.0.1:35874
+2017.09.22 02:53:38 LOG5[1261]: Connection closed: 0 byte(s) sent to SSL, 1 byte(s) sent to socket
+2017.09.22 02:53:40 LOG5[1262]: Service [https] accepted connection from 94.102.49.190:53206
+2017.09.22 02:53:40 LOG5[1262]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:53:40 LOG5[1262]: Service [https] connected remote server from 127.0.0.1:35876
+2017.09.22 02:53:40 LOG5[1262]: Connection closed: 0 byte(s) sent to SSL, 1 byte(s) sent to socket
+2017.09.22 02:53:42 LOG5[1263]: Service [https] accepted connection from 94.102.49.190:53380
+2017.09.22 02:53:42 LOG3[1263]: s_connect: connect ::1:8888: Connection refused (111)
+2017.09.22 02:53:42 LOG5[1263]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:53:42 LOG5[1263]: Service [https] connected remote server from 127.0.0.1:35882
+2017.09.22 02:53:43 LOG5[1263]: Connection closed: 0 byte(s) sent to SSL, 1 byte(s) sent to socket
+2017.09.22 02:53:48 LOG5[1264]: Service [https] accepted connection from 94.102.49.190:53931
+2017.09.22 02:53:49 LOG3[1264]: SSL_accept: 14094418: error:14094418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca
+2017.09.22 02:53:49 LOG5[1264]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 02:53:52 LOG5[1265]: Service [https] accepted connection from 94.102.49.190:54382
+2017.09.22 02:53:55 LOG3[1265]: SSL_accept: 14094418: error:14094418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca
+2017.09.22 02:53:55 LOG5[1265]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 02:53:55 LOG5[1266]: Service [https] accepted connection from 94.102.49.190:54765
+2017.09.22 02:53:56 LOG5[1266]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:53:56 LOG5[1266]: Service [https] connected remote server from 127.0.0.1:35906
+2017.09.22 02:53:59 LOG5[1266]: Connection closed: 495 byte(s) sent to SSL, 5 byte(s) sent to socket
+2017.09.22 02:54:03 LOG5[1267]: Service [https] accepted connection from 94.102.49.190:55771
+2017.09.22 02:54:04 LOG3[1267]: SSL_accept: 14094418: error:14094418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca
+2017.09.22 02:54:04 LOG5[1267]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 02:54:05 LOG5[1268]: Service [https] accepted connection from 94.102.49.190:56072
+2017.09.22 02:54:05 LOG3[1268]: s_connect: connect ::1:8888: Connection refused (111)
+2017.09.22 02:54:05 LOG5[1268]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:54:05 LOG5[1268]: Service [https] connected remote server from 127.0.0.1:35934
+2017.09.22 02:54:05 LOG5[1268]: Connection closed: 0 byte(s) sent to SSL, 1 byte(s) sent to socket
+2017.09.22 02:54:06 LOG5[1269]: Service [https] accepted connection from 94.102.49.190:56262
+2017.09.22 02:54:06 LOG3[1269]: SSL_accept: 1408A0C1: error:1408A0C1:SSL routines:ssl3_get_client_hello:no shared cipher
+2017.09.22 02:54:06 LOG5[1269]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 02:54:07 LOG5[1270]: Service [https] accepted connection from 94.102.49.190:56392
+2017.09.22 02:54:07 LOG5[1270]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:54:07 LOG5[1270]: Service [https] connected remote server from 127.0.0.1:35936
+2017.09.22 02:54:07 LOG5[1270]: Connection closed: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 02:54:07 LOG5[1271]: Service [https] accepted connection from 94.102.49.190:56447
+2017.09.22 02:54:08 LOG3[1271]: s_connect: connect ::1:8888: Connection refused (111)
+2017.09.22 02:54:08 LOG5[1271]: s_connect: connected 127.0.0.1:8888
+2017.09.22 02:54:08 LOG5[1271]: Service [https] connected remote server from 127.0.0.1:35940
+2017.09.22 02:54:08 LOG5[1271]: Connection closed: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 04:40:30 LOG5[1272]: Service [https] accepted connection from 212.83.134.100:61011
+2017.09.22 04:40:30 LOG3[1272]: SSL_accept: 1407609C: error:1407609C:SSL routines:SSL23_GET_CLIENT_HELLO:http request
+2017.09.22 04:40:30 LOG5[1272]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 04:40:30 LOG5[1273]: Service [https] accepted connection from 212.83.134.100:61038
+2017.09.22 04:40:30 LOG3[1273]: SSL_accept: 1407609C: error:1407609C:SSL routines:SSL23_GET_CLIENT_HELLO:http request
+2017.09.22 04:40:30 LOG5[1273]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 06:34:45 LOG5[1274]: Service [https] accepted connection from 60.191.38.77:46515
+2017.09.22 06:34:45 LOG5[1274]: s_connect: connected 127.0.0.1:8888
+2017.09.22 06:34:45 LOG5[1274]: Service [https] connected remote server from 127.0.0.1:57460
+2017.09.22 06:34:48 LOG3[1274]: SSL_write: Connection reset by peer (104)
+2017.09.22 06:34:48 LOG5[1274]: Connection reset: 34944 byte(s) sent to SSL, 311 byte(s) sent to socket
+2017.09.22 10:36:45 LOG5[1275]: Service [https] accepted connection from 185.110.132.239:49788
+2017.09.22 10:36:45 LOG3[1275]: s_connect: connect ::1:8888: Connection refused (111)
+2017.09.22 10:36:45 LOG5[1275]: s_connect: connected 127.0.0.1:8888
+2017.09.22 10:36:45 LOG5[1275]: Service [https] connected remote server from 127.0.0.1:52858
+2017.09.22 10:36:47 LOG3[1275]: transfer: s_poll_wait: TIMEOUTclose exceeded: closing
+2017.09.22 10:36:47 LOG5[1275]: Connection closed: 60505 byte(s) sent to SSL, 78 byte(s) sent to socket
+2017.09.22 11:58:50 LOG5[1276]: Service [https] accepted connection from 158.85.81.120:10000
+2017.09.22 11:58:52 LOG3[1276]: SSL_accept: Peer suddenly disconnected
+2017.09.22 11:58:52 LOG5[1276]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2017.09.22 14:32:13 LOG5[1277]: Service [https] accepted connection from 54.153.27.76:40212
+2017.09.22 14:32:13 LOG5[1277]: s_connect: connected 127.0.0.1:8888
+2017.09.22 14:32:13 LOG5[1277]: Service [https] connected remote server from 127.0.0.1:47622
+2017.09.22 14:32:14 LOG5[1277]: Connection closed: 60822 byte(s) sent to SSL, 239 byte(s) sent to socket
