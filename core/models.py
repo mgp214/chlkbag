@@ -3,7 +3,6 @@ from django.contrib.gis.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.contrib.auth.models import AbstractUser
 from django.conf import settings
-
 '''from core.fields import RouteGrade'''
 
 class Region(models.Model):
