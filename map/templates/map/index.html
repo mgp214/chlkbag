@@ -1,8 +1,8 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-<div class="col flex-height px-0">
-	<div class="alert alert-info alert-dismissible fade show" role="alert">
+<div class="col flex-height px-0 py-0 my-0">
+	<div class="alert alert-info alert-dismissible fade show my-0" role="alert">
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
@@ -16,31 +16,77 @@
 	var lat;
 	var lon;
 	var routesByID = { };
+	var areasByID = { };
+	var mapContainer = document.getElementById('map');
 	function initialize() {
 		getLocation();
 	}
+	function render_context() {
+		{% for route in nearby_routes %}
+			var route_marker = new google.maps.Marker({
+				position: {lat: {{ route.coordinates.y }}, lng: {{ route.coordinates.x }}},
+				icon: {
+					path: google.maps.SymbolPath.CIRCLE,
+					scale: 5,
+					strokeWeight: 0,
+					fillColor: '#FF0000',
+					fillOpacity: 0.75
+				},
+				map: map
+			});
+			routesByID[{{ route.id }}] = route_marker;
+		{% endfor %}
+		{% for area in nearby_areas %}
+			var area_coordinates = [
+				{% for coord in area.polygon.coords.0 %}
+				{lat: {{ coord.1 }}, lng: {{ coord.0 }}} {% if forloop.last %}{% else %},{% endif %}
+				{% endfor %}
+			];
+			var polygon = new google.maps.Polygon({
+				paths: area_coordinates,
+				strokeColor: '#FF0000',
+				strokeOpacity: 0.8,
+				strokeWeight: 2,
+				fillColor: '#FF0000',
+				fillOpacity: 0.1,
+			});
+			polygon.setMap(map);
+			areasByID[{{ area.id }}] = polygon;
+		{% endfor %}
+	}
+/*	function refresh_context() {
+		{% for route in routes_nearby %}	
+			routesByID[i{{ route.id }}].setMap(null);
+		{% endfor %}
+		routesByID = { };
+		{% for area in areas_nearby %}
+			areasByID[].setMap(null);
+		{% endfor %}
+		
+		areasByID = { };
+		render_context();
+	}*/
+	function get_map_object(lat, lon) {
+		map = new google.maps.Map(mapContainer, {
+			zoom: 13,
+			disableDefaultUI: true,
+			center: new google.maps.LatLng(lat, lon),
+			mapTypeId: google.maps.MapTypeId.TERRAIN
+		});
+//		map.addListener('dragend', refresh_context());
+	}
 	function getLocation() {
-		var mapContainer = document.getElementById('map');
 		mapContainer.textContent = 'hold on, we\'re checking our pack for the map...';
 		function success(position) {
 			lat = position.coords.latitude;
 			lon = position.coords.longitude;
-			map = new google.maps.Map(mapContainer, {
-				zoom: 13,
-				center: new google.maps.LatLng(lat, lon),
-				mapTypeId: google.maps.MapTypeId.TERRAIN
-			});
-			var route_marker;
-			{% for route in routes_nearby %}
-				route_marker = new google.maps.Marker({
-					position: {lat: {{ route.coordinates.y }}, lng: {{ route.coordinates.x }}},
-					map: map
-				});
-				routesByID[{{route.id}}] = route_marker;
-			{% endfor %}
+			get_map_object(lat,lon);
+			render_context();
 		}
 		function error(error) {
-			mapContainer.textContent = 'geolocation not available :(';
+			get_map_object(34.743913, -111.055208);
+			render_context();
+//			mapContainer.textContent = 'geolocation not available :(';
 		}
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(success, error);

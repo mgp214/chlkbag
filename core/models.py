@@ -23,8 +23,8 @@ class Area(models.Model):
 	description = models.TextField('Description')
 	getting_there = models.TextField('How to get there')
 	region = models.ForeignKey(Region, on_delete=models.CASCADE, default=None, null=True)
-	area = models.MultiPolygonField(
-		'Area',
+	polygon = models.PolygonField(
+		'Polygon',
 		null=True,
 		blank=True,
 		default=None,
