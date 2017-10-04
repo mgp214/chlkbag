@@ -7,7 +7,7 @@
 				<div class="col">
 					<div class="row pr-1 pl-0 py-1 rounded bg-color-secondary-2-0 color-secondary-1-4 justify-items-between">
 						<span class="col align-self-end">
-							{{ viewed_user.first_name }} {{viewed_user.last_name }}
+							{{ viewed_user.first_name }} {{viewed_user.last_name }}{% if viewed_user == user %}<a class="align-text-top p-1 badge badge-info" id="edit_name">edit name</a>{% endif %}
 						</span>
 						<span class="col text-right">
 							<h3 class="color-complement-0">
@@ -15,18 +15,54 @@
 							</h3>
 						</span>
 					</div>
+					{% if viewed_user == user %}
+						<div class="row p-3">
+							<a class="mx-3 col btn btn-primary" href="{% url 'logout' %}">log out</a>
+							<a class="mx-3 col btn btn-secondary" href="{% url 'password_change' %}">change password</a>
+						</div>
+					{% endif %}
 					<div class="row p-3">
 						<p>
-							<strong class="color-secondary-1-2" >about me</strong>
+							<strong class="color-secondary-1-2" >about me</strong>{% if viewed_user == user %}<a class="align-text-top p-1 badge badge-info" id="edit_bio">edit</a>{% endif %}
+
 							<br />
-							{{ viewed_user.bio }}
+							{{ viewed_user.bio }}`
 							<br />
 							<br />
-							<strong class="color-secondary-1-2" >birthday: </strong>
+							<strong class="color-secondary-1-2" >birthday: </strong>{% if viewed_user == user %}<a class="align-text-top p-1 badge badge-info" id="edit_birth_date">edit</a>{% endif %}
+
 							{{ viewed_user.birth_date }}
 							<br />
-							<strong class="color-secondary-1-2" >hometown: </strong>
+							<strong class="color-secondary-1-2" >hometown: </strong>{% if viewed_user == user %}<a class="align-text-top p-1 badge badge-info" id="edit_home_town">edit</a>{% endif %}
+
 							{{ viewed_user.home_town }}
+							<br />
+							<strong class="color-secondary-1-2" >home climbing region: </strong>{% if viewed_user == user %}<a class="align-text-top p-1 badge badge-info" id="edit_home_region">edit</a>{% endif %}
+
+							{{ viewed_user.home_region }}
+							<br />
+							<br />
+							<strong class="color-secondary-1-2" >favorite areas: </strong>{% if viewed_user == user %}<a class="align-text-top p-1 badge badge-info" id="edit_favorite_areas">edit</a>{% endif %}
+
+							<br />
+							{% if viewed_user.favorite_areas.all|length > 0 %}
+								{% for area in viewed_user.favorite_areas.all %}
+									{{ area }}<br />
+								{% endfor %}
+							{% else %}
+								None yet!<br />
+							{% endif %}
+							<br />
+							<strong class="color-secondary-1-2" >favorite climbs: </strong>{% if viewed_user == user %}<a class="align-text-top p-1 badge badge-info" id="edit_favorite_climbs">edit</a>{% endif %}
+
+							<br />
+							{% if viewed_user.favorite_climbs.all|length > 0 %}
+								{% for climb in viewed_user.favorite_climbs.all %}
+									{{ climb }}<br />
+								{% endfor %}
+							{% else %}
+								None yet!<br />
+							{% endif %}
 						</p>
 					</div>
 				</div>

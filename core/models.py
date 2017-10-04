@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.gis.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import UserManager, AbstractUser
 from django.conf import settings
 '''from core.fields import RouteGrade'''
 
@@ -51,7 +51,13 @@ class Route(models.Model):
 	def __str__(self):
 		return self.name
 
+class CustomUserManager(UserManager):
+	def get_by_natural_key(self, username):
+		case_insensitive_username_field = '{}__iexact'.format(self.model.USERNAME_FIELD)
+		return self.get(**{case_insensitive_username_field: username})
+
 class User(AbstractUser):
+	objects = CustomUserManager()
 	first_name = models.CharField(max_length=15, blank=True)
 	last_name = models.CharField(max_length=15, blank=True)
 	home_town = models.CharField(max_length=25, blank=True)
