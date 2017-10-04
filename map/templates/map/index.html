@@ -2,12 +2,14 @@
 
 {% block content %}
 <div class="col flex-height px-0 py-0 my-0">
+	{% if not user.is_authenticated %}
 	<div class="alert alert-info alert-dismissible fade show my-0" role="alert">
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
 		<strong>Hello, dirtbags!</strong> Welcome to <strong>chlkbag</strong>, a new platform for the ever changing beta of the climbing world. :)
 	</div>
+	{% endif %}
 	<div id="map">
 	</div>
 </div>
@@ -48,6 +50,7 @@
 				strokeOpacity: 0.8,
 				strokeWeight: 2,
 				fillColor: '#FF0000',
+				editable: true,
 				fillOpacity: 0.1,
 			});
 			polygon.setMap(map);

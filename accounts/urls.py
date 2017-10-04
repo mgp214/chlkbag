@@ -5,6 +5,8 @@ from . import views
 
 urlpatterns = [
 	url(r'^register/$', views.register, name='register'),
+	url(r'^profile/$', views.profile_redirect, name='profile_redirect'),
+	url(r'^profile/(?P<username>[0-9A-Za-z_\-]+)/$', views.profile, name='profile'),
 	url(r'^logout/$', auth_views.LogoutView.as_view(), name='logout'),
 	url(r'^login/$', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
 	url(r'^reset/$',

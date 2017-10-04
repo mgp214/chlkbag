@@ -8,9 +8,7 @@ from django.conf import settings
 class Region(models.Model):
 	name = models.CharField('Name', max_length=50)
 	description = models.TextField('Description')
-	getting_there = models.TextField('How to get there')
-	contents = models.PolygonField(
-		'Area',
+	multipolygon = models.MultiPolygonField(
 		null=True,
 		blank=True,
 		default=None,

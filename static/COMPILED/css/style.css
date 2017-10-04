@@ -46,7 +46,7 @@ html {
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-  color: #fff9ec;
+  color: #fffdec;
   font-family: 'Pompiere', cursive;
 }
 /* change the color of active or hovered links */
@@ -56,130 +56,130 @@ html {
   font-family: 'Pompiere', cursive;
 }
 .color-primary-0 {
-  color: #874ed6;
+  color: #874ED6;
 }
 /* Main Primary color */
 .color-primary-1 {
-  color: #6810e3;
+  color: #6810E3;
 }
 .color-primary-2 {
-  color: #43049b;
+  color: #43049B;
 }
 .color-primary-3 {
-  color: #c1a5e9;
+  color: #C1A5E9;
 }
 .color-primary-4 {
-  color: #aaa5b1;
+  color: #AAA5B1;
 }
 .color-secondary-1-0 {
-  color: #ffc44d;
+  color: #FFC44D;
 }
 /* Main Secondary color (1) */
 .color-secondary-1-1 {
-  color: #ffaa00;
+  color: #FFAA00;
 }
 .color-secondary-1-2 {
-  color: #e59800;
+  color: #E59800;
 }
 .color-secondary-1-3 {
-  color: #ffe4ad;
+  color: #FFE4AD;
 }
 .color-secondary-1-4 {
-  color: #fff9ec;
+  color: #FFF9EC;
 }
 .color-secondary-2-0 {
-  color: #5078d5;
+  color: #5078D5;
 }
 /* Main Secondary color (2) */
 .color-secondary-2-1 {
-  color: #1352e2;
+  color: #1352E2;
 }
 .color-secondary-2-2 {
   color: #053299;
 }
 .color-secondary-2-3 {
-  color: #a5bae8;
+  color: #A5BAE8;
 }
 .color-secondary-2-4 {
-  color: #a3a6af;
+  color: #A3A6AF;
 }
 .color-complement-0 {
-  color: #ffee4d;
+  color: #FFEE4D;
 }
 /* Main Complement color */
 .color-complement-1 {
-  color: #ffe700;
+  color: #FFE700;
 }
 .color-complement-2 {
-  color: #e5cf00;
+  color: #E5CF00;
 }
 .color-complement-3 {
-  color: #fff7ad;
+  color: #FFF7AD;
 }
 .color-complement-4 {
-  color: #fffdec;
+  color: #FFFDEC;
 }
 .bg-color-primary-0 {
-  background-color: #874ed6;
+  background-color: #874ED6;
 }
 /* Main Primary color */
 .bg-color-primary-1 {
-  background-color: #6810e3;
+  background-color: #6810E3;
 }
 .bg-color-primary-2 {
-  background-color: #43049b;
+  background-color: #43049B;
 }
 .bg-color-primary-3 {
-  background-color: #c1a5e9;
+  background-color: #C1A5E9;
 }
 .bg-color-primary-4 {
-  background-color: #aaa5b1;
+  background-color: #AAA5B1;
 }
 .bg-color-secondary-1-0 {
-  background-color: #ffc44d;
+  background-color: #FFC44D;
 }
 /* Main Secondary color (1) */
 .bg-color-secondary-1-1 {
-  background-color: #ffaa00;
+  background-color: #FFAA00;
 }
 .bg-color-secondary-1-2 {
-  background-color: #e59800;
+  background-color: #E59800;
 }
 .bg-color-secondary-1-3 {
-  background-color: #ffe4ad;
+  background-color: #FFE4AD;
 }
 .bg-color-secondary-1-4 {
-  background-color: #fff9ec;
+  background-color: #FFF9EC;
 }
 .bg-color-secondary-2-0 {
-  background-color: #5078d5;
+  background-color: #5078D5;
 }
 /* Main Secondary color (2) */
 .bg-color-secondary-2-1 {
-  background-color: #1352e2;
+  background-color: #1352E2;
 }
 .bg-color-secondary-2-2 {
   background-color: #053299;
 }
 .bg-color-secondary-2-3 {
-  background-color: #a5bae8;
+  background-color: #A5BAE8;
 }
 .bg-color-secondary-2-4 {
-  background-color: #a3a6af;
+  background-color: #A3A6AF;
 }
 .bg-color-complement-0 {
-  background-color: #ffee4d;
+  background-color: #FFEE4D;
 }
 /* Main Complement color */
 .bg-color-complement-1 {
-  background-color: #ffe700;
+  background-color: #FFE700;
 }
 .bg-color-complement-2 {
-  background-color: #e5cf00;
+  background-color: #E5CF00;
 }
 .bg-color-complement-3 {
-  background-color: #fff7ad;
+  background-color: #FFF7AD;
 }
 .bg-color-complement-4 {
-  background-color: #fffdec;
+  background-color: #FFFDEC;
 }
